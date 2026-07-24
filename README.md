@@ -1,6 +1,6 @@
 # CareerForge v2: Agentic Career War Room 🚀
 
-**🌍 Access the live web app:** [https://your-app-name.streamlit.app/](https://your-app-name.streamlit.app/)
+**🌍 Access the live web app:** [https://careerforge-nfxvxqh8sa4kdmeh9nfcvu.streamlit.app/](https://careerforge-nfxvxqh8sa4kdmeh9nfcvu.streamlit.app/)
 
 CareerForge has been completely rebuilt from the ground up as an AI-powered, agentic career readiness platform. It bridges the gap between your resume and the actual hiring bar of top-tier companies. Powered by Gemini (or Groq/OpenAI), CareerForge intelligently analyzes your profile, scores your readiness, builds an interactive timeline flowchart for preparation, and provides an always-on Career Coach.
 
