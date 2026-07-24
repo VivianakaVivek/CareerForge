@@ -46,7 +46,7 @@ class AgenticCareerCoach:
             self.model = "llama-3.3-70b-versatile"
         else:
             self.provider = "gemini"
-            self.model = "gemini-2.5-flash"
+            self.model = "gemini-2.0-flash"
 
     def check_health(self) -> tuple[bool, str]:
         """
@@ -88,8 +88,8 @@ class AgenticCareerCoach:
                 # Bundle system instruction inside the prompt to support all API versions safely
                 combined_prompt = f"System Instruction:\n{system_instruction}\n\nCandidate Input:\n{prompt}"
                 
-                # Fallback models list in case the primary one is busy or has rate-limit issues
-                models_to_try = [self.model, "gemini-2.5-flash", "gemini-2.0-flash"]
+                # Fallback models list — ordered from most stable to experimental
+                models_to_try = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.5-flash"]
                 
                 config = None
                 if json_mode:
