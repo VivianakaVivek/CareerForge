@@ -35,7 +35,7 @@ class AgenticCareerCoach:
         It auto-detects the provider based on the API key prefix:
           - Starts with 'sk-': OpenAI (uses gpt-4o-mini)
           - Starts with 'gsk_': Groq (uses llama-3.3-70b-versatile)
-          - Default: Gemini (uses gemini-2.5-flash-lite)
+          - Default: Gemini (uses gemini-2.5-flash)
         """
         self.api_key = api_key.strip()
         if self.api_key.startswith("sk-"):
@@ -46,7 +46,7 @@ class AgenticCareerCoach:
             self.model = "llama-3.3-70b-versatile"
         else:
             self.provider = "gemini"
-            self.model = "gemini-2.5-flash-lite"
+            self.model = "gemini-2.5-flash"
 
     def check_health(self) -> tuple[bool, str]:
         """
